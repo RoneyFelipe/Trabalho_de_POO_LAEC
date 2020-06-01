@@ -1,0 +1,79 @@
+#facaparte {
+	margin: 0;
+	padding: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 100%;
+}
+.conteudo {
+	position: absolute;
+	top: 766vh;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 38%;
+	height: 60%;
+	padding: 3%;
+	background: rgba(0,0,0,.9);
+	box-sizing: border-box;
+	box-shadow: 0 5vh 5vh rgba(0,0,0,.7);
+	border-radius: 1.5vh;
+}
+.conteudo h2 {
+	margin: 0 0 7%;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+}
+.conteudo .inputConteudo {
+	position: relative;
+}
+.conteudo .inputConteudo input {
+	width: 100%;
+	padding: 3% 0;
+	font-size: 95%;
+	color: #fff;
+	margin-bottom: 6%;
+	border: none;
+	border-bottom: 0.25vh solid #fff;
+	outline: none;
+	background: transparent;
+}
+.conteudo .inputConteudo label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 1% 0;
+	font-size: 107%;
+	color: #fff;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.conteudo .inputConteudo input:focus ~ label,
+.conteudo .inputConteudo input:valid ~ label {
+	top: -19%;
+	left: 0;
+	color: #03a9f4;
+	font-size: 102%;
+}
+#Blogin {
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #03a9f4;
+	padding: 3% 8%;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.bts {
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #03a9f4;
+	padding: 3% 8%;
+	cursor: pointer;
+	border-radius: 5px;
+}
+#Bsalvar {
+	display: none;
+}

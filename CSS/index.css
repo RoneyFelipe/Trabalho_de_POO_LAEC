@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@keyframes M {
+	0% {
+		height: var(--tamanho-antes);/*Mudar de px para vh*/
+		padding: var(--padding-antes);/*Mudar de px para %*/
+		background: transparent;
+		color: var(--cor-fontetexto);
+		box-shadow: none;
+	}
+	100% {
+		padding: var(--padding-depois); /*Mudar de px para %*/
+		padding-bottom: var(--padding-depois); /*Mudar de px para %*/ 
+		height: var(--tamanho-depois); /*Mudar de px para vh*/
+		color: #00BFFF;
+		box-shadow: var(--sombra);
+		background-color: var(--cor-barra);
+	}
+}
+@keyframes M2 {
+	0% {
+		padding: var(--padding-depois); /*Mudar de px para %*/
+		padding-top: var(--padding-depois); /*Mudar de px para %*/
+		height: var(--tamanho-depois); /*Mudar de px para vh*/
+		color: #00BFFF;
+		background-color: var(--cor-barra);
+		box-shadow: var(--sombra)
+	}
+	100% {
+		height: var(--tamanho-antes); /*Mudar de px para vh*/
+		padding: var(--padding-antes); /*Mudar de px para %*/
+		background: transparent;
+		border: none;
+		color: var(--cor-fontetexto);
+		box-shadow: none;
+	}
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes sumir {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --cor-texto:  #A9A9A9;
+    --cor-da-barra: #1B043B; 
+    --fonte-texto: 'Josefin Sans', sans-serif;
+    --tamanho-texto: ; 
+    --cor-barra: #1B043B;
+    --sombra: 0px 5px 10px 0px #888888;
+    --tamanho-antes: 12vh;
+    --tamanho-depois: 7vh;
+    --padding-antes: 1%;
+    --padding-depois: 0.5%;
+}
+/*//Area de navegação*/
+/*//Tag's*/
+header {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%; 
+    position: fixed;
+    box-sizing: border-box;
+    font-family: var(--fonte-texto);
+    font-size: 130%;
+    z-index: 3;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 8vh;
+    flex-wrap: wrap;
+    padding: 1%;
+}
+label img {
+    width: 10%;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    padding: 1.2vh;
+    color: var(--cor-texto);
+    position: relative;
+    border: none;
+    border-bottom: none;
+    transition: color, text-decoration, 500ms ease;
+}
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+/*Classes*/
+.fundos {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.texp {
+    padding-left: 15%;
+    padding-top: 2%;
+    text-align: justify;
+    font-weight: bold;
+    font-size: 140%;
+    line-height: 1.6;
+    text-indent: 5%;
+}
+.textos2 {
+    justify-content: center;
+    color: #00CED1;
+    font-family: var(--fonte-texto);
+    padding-top: 5%;
+    padding-right: 5%;
+}
+.textos2 h2 {
+    text-align: right;
+    font-size: 250%;
+}
+.divisao1 {
+    width: 100%;
+	height: 4vh;
+	position: relative;
+	background-color: white;
+    background-attachment: fixed;
+}
+.mudancas {
+	animation-name: M;
+	animation-iteration-count: 1;
+	animation-duration: 1s;
+	background-color: var(--cor-barra);
+	box-shadow: var(--sombra);
+	height: var(--tamanho-depois); /*Mudar de px para vh*/
+	padding: var(--padding-depois); /*Mudar de px para %*/
+	padding-bottom: var(--padding-depois); /*Mudar de px para %*/
+}
+.mudancas2 {
+	animation-name: M2;
+	animation-iteration-count: 1;
+	animation-duration: 1s;
+	background-color: transparent;
+	height: var(--tamanho-depois); /*Mudar de px para vh*/
+	padding: var(--padding-antes); /*Mudar de px para %*/
+}
+.mudancas3 {
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    padding-top: 1%;
+    opacity: 1;
+}
+.mudancas4 {
+    animation-name: sumir;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    padding-top: 1%;
+    opacity: 0;
+}
+.titulos {
+    font-size: 250%;
+    font-family: var(--fonte-texto);
+    color: #00CED1;
+    text-align: right;
+    padding-top: 5%;
+    margin-right: 5%;
+    border-bottom: solid 0.5vh #00CED1 ;
+    margin-bottom: 5%;
+}
+.inv {
+	display: none;
+}
+.vis {
+	display: block;
+}
+.a {
+    opacity: 0;
+}
+/*Id's*/
+#inicio {
+    display: flex;
+    background-image: url('img/inicial.jpg');
+}
+#oquee {
+    background-image: url('img/1s.jpg');
+    height: auto;
+    padding-bottom: 10vh;
+}
+#img1 {
+    padding-top: 18%;
+    padding-left: 5%;
+}
+#img2 {
+    width: 80vh;
+}
+#img3 {
+    justify-content: flex-start;
+}
+#caracteristicas {
+    background-color: #333;
+    padding-bottom: 10%;
+}
+#smartsBr {
+    background-color: #003e46;
+    height: 210vh;
+}
+#facaparte1 {
+    background-image: url(img/fundopoli.jpg);
+    height: 140vh;
+}
+#principio {
+    padding-top: 2vh;
+	font-size: 140%;
+	font-family: var(--fonte-texto);
+	color: white;
+}
+#a2 {
+    font-size: 250%;
+    font-family: var(--fonte-texto);
+    color: #00CED1;
+    text-align: left;
+    padding-top: 5%;
+    margin-left: 5%;
+    border-bottom: solid 0.5vh #00CED1 ;
+    margin-bottom: 5%;
+}
+#t1 {
+    color: white;
+}
+#barra2{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;   
+}
+#barra3{
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;   
+}
+#barra3 img {
+    height: 35%;
+    width: auto;
+}

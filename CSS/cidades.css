@@ -1,0 +1,222 @@
+#smartsBr2 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: var(--fonte-texto);
+    min-height: 100vh;
+    background-color: #003e46;
+}
+
+.um {
+    background-image: url('img/1campinas.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.dois {
+    background-image: url('img/2saopaulo.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.tres {
+    background-image: url('img/3curitiba.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.quatro {
+    background-image: url('img/4brasilia.jpg');
+    background-position: left;
+    background-size: cover;
+}
+
+.cinco {
+    background-image: url('img/5florianopolis.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.seis {
+    background-image: url('img/6vitorianovo.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    /*Ele fica flexível*/
+    /*flex-direction: row;  ->Não necessariamente precisa colocar porque 
+	fala que o display é flex ele já posiciona em linhas.*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box {
+    /*Colocou o quadro preto*/
+    position: relative;
+    flex-wrap: wrap;
+    margin: 1%;
+    width: 20%;
+    height: 50vh;
+    background: #000;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, .5);
+    margin: 5%;
+}
+
+.box .imgBx {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.box .imgBx .um {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.box:hover .imgBx .um {
+    opacity: 0;
+}
+
+.box .imgBx .dois {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.box:hover .imgBx .dois {
+    opacity: 0;
+}
+
+.box .imgBx .tres {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.box:hover .imgBx .tres {
+    opacity: 0;
+}
+
+.box .imgBx .quatro {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.box:hover .imgBx .quatro {
+    opacity: 0;
+}
+
+.box .imgBx .cinco {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.box:hover .imgBx .cinco {
+    opacity: 0;
+}
+
+.box .imgBx .seis {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.box:hover .imgBx .seis {
+    opacity: 0;
+}
+
+
+/*Agora já começa a especificar o texto das imagens*/
+
+.box .content {
+    /*responsável por surgir a caixinha com o nome da cidade*/
+    position: absolute;
+    bottom: 3%;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    background: #fff;
+    transition: 0.5s;
+    overflow: hidden;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.box:hover .content {
+    /*Aqui sobe o nome da cidade já com o texto não justificado*/
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.box .content h3 {
+    /*Aqui ajusta o nome da cidade na caixinha, 
+	porém aparece uma pequena parte do texto em baixo*/
+    margin: 0;
+    padding: 0;
+    font-size: 120%;
+}
+
+.box .content p {
+    /*Aqui some a pequena parte do texto em baixo da caixinha,
+	no entanto some o texto também.*/
+    margin: 5% 0 0;
+    padding: 0;
+    opacity: 0;
+    line-height: 1.2em;
+    /*A unidade de medida em é para determinar o 
+	tamanho da fonte.*/
+    transition: 0.5s;
+    text-align: justify;
+}
+
+.box:hover .content p {
+    opacity: 1;
+    /*Opacidade da letra do texto*/
+    transition-delay: 0.2s;
+}
+
+#smartsBr {
+    background-color: #003e46;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

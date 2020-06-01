@@ -1,0 +1,115 @@
+#rodape2 {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+}
+
+#semlinha {
+	text-decoration: none;
+}
+.footer-main-div {
+	width: 100%;
+	height: auto; /*automático*/
+	margin: auto;
+	background: #000000;
+	padding: 12vh 0vw;
+}
+.footer-social-icons {
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+.footer-social-icons ul	{
+	margin: 0%;
+	padding: 0%;
+	text-align: center;
+}
+.footer-social-icons ul li {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 0vh 1vw;
+	border-radius: 100%;
+	transition: 0.5s;
+	background: purple;
+}
+#facce:hover {
+	transition: 0.5s;
+	background: #2054A0;
+}
+#twitter:hover {
+	transition: 0.5s;
+	background: #00ABEC;
+}
+#googleplus:hover {
+	transition: 0.5s;
+	background: #E0193B;
+}
+#youtube:hover {
+	transition: 0.5s;
+	background: #FF001F;
+}
+.footer-social-icons ul li a {
+	color: #fff;
+	font-size: 170%;
+	display: block;
+	padding-top: 2%;
+}
+.footer-social-icons ul li:hover a {
+	color: #fff;
+}
+.footer-social-icons ul li a i {
+	line-height: 8vh;
+}
+.footer-menu-one {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	padding-top: 3%;
+}
+.footer-menu-one ul {
+	margin: 0%;
+	padding: 0%;
+	text-align: center;
+}
+.footer-menu-one ul li {
+	display: inline-block;
+	margin: 0vh 20vw;
+}
+.footer-menu-one ul li a {
+	font-family: arial;
+	font-size: 120%;
+	font-weight: 600;
+	color: #fff;
+	letter-spacing: 0.3em;
+	text-transform: uppercase; /*Letra maiúscula*/
+}
+.footer-menu-one ul li a:hover {
+	transition: 0.5s;
+	color: #8B008B;
+}
+/*Linha inferior*/
+.footer-bottom {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	background: purple;
+	
+	font-family: arial;
+	text-align: center;
+	color: #fff;
+}
+.footer-bottom p {
+	font-family: arial;
+	font-size: 0.8em;
+	text-align: center;
+	color: #fff;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+}
+#oie {
+	margin-left: 25%;
+	background-color: purple;
+	width: 49%;
+	margin-bottom: 2%;
+}

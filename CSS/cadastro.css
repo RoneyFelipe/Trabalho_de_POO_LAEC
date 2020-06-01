@@ -1,0 +1,99 @@
+#pL {
+	padding-top: 10%;
+	color: white;
+}
+#pL label {
+	text-decoration: none;
+	padding-left: 2%;
+	color: #03a9f4;
+	transition: text-decoration, 500ms ease;
+}
+#pL label:hover {
+	text-decoration: underline;
+	text-decoration-color: #03a9f4;
+	cursor: pointer;
+}
+#cadas, #dados {
+	margin: 0;
+	padding: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 100%;
+}
+
+#MD {
+	width: 58%;
+	height: 73%;
+}
+.box2::-webkit-scrollbar{
+	width: 3%;
+	height: 5%;
+}
+.box2::-webkit-scrollbar-thumb {
+	background-color: gray;
+	border-radius: 39vh;
+	transition: background-color 1s ease;
+}
+.box2::-webkit-scrollbar-thumb:hover {
+	background-color: #03a9f4;
+}
+.box2 {
+	position: absolute;
+	top: 766vh;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 38%;
+	height: 63%;
+	overflow: auto;
+	padding: 3%;
+	background: rgba(0,0,0,.9);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0,0,0,.7);
+	border-radius: 10px;
+}
+.box2 h2 {
+	margin: 0 0 7%;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+}
+.box2 .inputBox {
+	position: relative;
+}
+.box2 .inputBox input {
+	width: 100%;
+	padding: 3% 0;
+	font-size: 120%;
+	color: #fff;
+	margin-bottom: 6%;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+}
+.box2 .inputBox label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 1% 0;
+	font-size: 125%;
+	color: #fff;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.box2 .inputBox input:focus ~ label,
+.box2 .inputBox input:valid ~ label{
+	top: -19%;
+	left: 0;
+	color: #03a9f4;
+	font-size: 117%;
+}
+#Bcadastrar {
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #03a9f4;
+	padding: 3% 4%;
+	cursor: pointer;
+	border-radius: 5px;
+}
